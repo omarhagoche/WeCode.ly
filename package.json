@@ -9,6 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.15.3"
+    "@fontsource-variable/geist": "^5.2.8",
+    "astro": "^5.15.3",
+    "lucide-astro": "^0.552.0"
+  },
+  "devDependencies": {
+    "tailwindcss-animate": "^1.0.7"
   }
 }
