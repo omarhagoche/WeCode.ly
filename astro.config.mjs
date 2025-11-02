@@ -1,5 +1,13 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: "https://omarhagoche.github.io/WeCode.ly/",
+  base: "/WeCode.ly/",
+  integrations: [tailwind()],
+  vite: {
+    ssr: {
+      noExternal: ["lucide-astro"],
+    },
+  },
+});

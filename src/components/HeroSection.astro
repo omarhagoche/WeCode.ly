@@ -1,0 +1,128 @@
+---
+import { en } from "../locales/en";
+import { ar } from "../locales/ar";
+
+const locale: "en" | "ar" = "ar";
+const t = locale === "ar" ? ar : en;
+---
+
+<section
+  class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden"
+>
+  <div class="container mx-auto px-4 py-20 relative z-10">
+    <div class="max-w-5xl mx-auto text-center space-y-8">
+      <div class="flex justify-center mb-8 animate-fade-in-up">
+        <img
+          src="images/wecode-logo-light.png"
+          alt="WeCode Libya Logo"
+          width="320"
+        />
+      </div>
+
+      <h1
+        class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in-up animation-delay-100"
+      >
+        Connecting Libya's
+        <br />
+        <span class="text-[#ADE118]">Software Engineers</span>
+      </h1>
+
+      <p
+        class="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300"
+      >
+        A professional community for software engineers and architects in Libya
+        to share knowledge, experience, and advice about software development
+        best practices, clean code, and modern architectures.
+      </p>
+
+      <div
+        class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 animate-fade-in-up animation-delay-400"
+      >
+        <a
+          href="https://www.facebook.com/groups/wecode.ly"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background h-12 px-8 py-6 bg-[#ADE118] text-[#12329C] hover:bg-[#ADE118]/90 font-semibold text-lg group"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="mr-2 h-5 w-5"
+            ><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle
+              cx="8.5"
+              cy="7"
+              r="4"></circle><polyline
+              points="17 11 17 6 22 11 22 17 17 17 17 21"></polyline></svg
+          >
+          Join Our Community
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <a
+          href="#about"
+          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background h-12 px-8 py-6 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 font-semibold text-lg bg-transparent"
+        >
+          Learn More
+        </a>
+      </div>
+
+      <!-- Todo: Active this part later when needed*@ -->
+      <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 animate-fade-in-up animation-delay-500"     >
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-[#ADE118] mb-2">
+            500+
+          </div>
+          <div class="text-white/70 text-sm md:text-base">
+            Active Members
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-[#ADE118] mb-2">
+            50+
+          </div>
+          <div class="text-white/70 text-sm md:text-base">
+            Tech Discussions
+          </div> 
+        </div>
+         <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-[#ADE118] mb-2">
+            100%
+          </div>
+          <div class="text-white/70 text-sm md:text-base">
+            Professional
+          </div> 
+        </div> 
+      </div>  -->
+    </div>
+  </div>
+
+  <div
+    class="absolute top-20 left-10 w-72 h-72 bg-[#ADE118]/5 rounded-full blur-3xl"
+  >
+  </div>
+  <div
+    class="absolute bottom-20 right-10 w-96 h-96 bg-[#ADE118]/5 rounded-full blur-3xl"
+  >
+  </div>
+</section>

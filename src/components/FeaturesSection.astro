@@ -1,0 +1,76 @@
+---
+import {
+  Lightbulb,
+  GraduationCap,
+  MessageSquare,
+  Handshake,
+} from "lucide-astro";
+
+const features = [
+  {
+    icon: Lightbulb,
+    titleEn: "Knowledge Sharing",
+    titleAr: "تبادل المعرفة",
+    descriptionEn:
+      "Share insights, best practices, and solutions with fellow engineers",
+    descriptionAr: "شارك الأفكار وأفضل الممارسات والحلول مع زملائك المهندسين",
+  },
+  {
+    icon: GraduationCap,
+    titleEn: "Mentorship",
+    titleAr: "الإرشاد المهني",
+    descriptionEn:
+      "Learn from experienced professionals and guide the next generation",
+    descriptionAr: "تعلم من المحترفين ذوي الخبرة وأرشد الجيل القادم",
+  },
+  {
+    icon: MessageSquare,
+    titleEn: "Tech Talks",
+    titleAr: "نقاشات تقنية",
+    descriptionEn:
+      "Engage in meaningful discussions about the latest technologies",
+    descriptionAr: "شارك في نقاشات هادفة حول أحدث التقنيات",
+  },
+  {
+    icon: Handshake,
+    titleEn: "Collaboration",
+    titleAr: "التعاون بين المطورين",
+    descriptionEn: "Connect with peers and collaborate on exciting projects",
+    descriptionAr: "تواصل مع الزملاء وتعاون في مشاريع مثيرة",
+  },
+];
+---
+
+<section class="pb-40 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#12329C] mb-4">
+          What we do in <span class="text-[#3560EE]">WeCode Libya ?</span>
+        </h2>
+        <div class="w-24 h-1 bg-[#3560EE] mx-auto mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {
+          features.map((feature) => (
+            <div class="border-2 border-gray-200 hover:border-[#00d4ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white rounded-xl">
+              <div class="p-6 text-center space-y-4">
+                <div class="bg-[#00d4ff]/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto">
+                  <feature.icon class="h-8 w-8 text-[#00d4ff]" />
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-[#1e2a78] mb-2">
+                    {feature.titleEn}
+                  </h3>
+                  <p class="text-sm text-gray-600 mb-3">
+                    {feature.descriptionEn}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
