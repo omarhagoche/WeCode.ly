@@ -2,8 +2,8 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://omarhagoche.github.io/WeCode.ly/",
-  base: "/WeCode.ly/",
+  site: "https://wecode.ly/",
+  base: "/",
   integrations: [tailwind()],
   vite: {
     ssr: {
